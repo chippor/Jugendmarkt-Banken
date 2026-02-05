@@ -20,13 +20,12 @@
     </div>
 
     <nav class="nav-links" aria-label="Seiten-Navigation">
-      <a href="#vorteile">Unsere Vorteile</a>
       <a href="#media">Media-Kampagne</a>
+      <a href="#einstieg">Einstiegspakete</a>
       <a href="#benefits">Benefits für Banken</a>
     </nav>
 
     <div class="nav-actions">
-      <a class="btn btn-ghost" href="#kontakt">Kontakt</a>
       <a class="btn" href="#media">Jetzt starten</a>
     </div>
   </div>
@@ -77,26 +76,6 @@
     </div>
   </section>
 
-  <section id="vorteile" class="section">
-    <div class="container">
-      <h2>Unsere Vorteile</h2>
-      <div class="grid3">
-        <div class="tile">
-          <h3>Regionale Steuerung</h3>
-          <p>Ausspielung in eurem Geschäftsgebiet, angepasst an eure Region und Zielsetzung.</p>
-        </div>
-        <div class="tile">
-          <h3>Messbar & optimierbar</h3>
-          <p>Transparente KPIs, klare Learnings und laufende Optimierung der Kampagne.</p>
-        </div>
-        <div class="tile">
-          <h3>Brandsicher</h3>
-          <p>Seriöses Umfeld, saubere Aussteuerung und Fokus auf langfristige Markenwirkung.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="media" class="section alt">
     <div class="container">
       <h2>Preiskalkulator für Media-Kampagnen in eurer Region nach Postleitzahlen</h2>
@@ -109,15 +88,15 @@
         <div class="calc-row">
           <div class="calc-left">
             <div class="calc-title">Display-Ads (Impressionen)</div>
-            <div class="calc-meta">TKP: 22 € · Min: 10.000 · Max: 5.000.000</div>
-            <input id="s_display" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-meta">TKP: 22 €</div>
+            <input id="s_display" type="range" min="50000" max="1000000" step="10000" value="50000" />
             <div class="calc-values">
-              <span>Volumen: <strong id="v_display">10.000</strong></span>
+              <span>Volumen: <strong id="v_display">50.000</strong></span>
               <span>TKP: <strong>22 €</strong></span>
             </div>
           </div>
           <div class="calc-right">
-            <div class="calc-price" id="p_display">220 €</div>
+            <div class="calc-price" id="p_display">1.100 €</div>
             <div class="calc-note">netto</div>
           </div>
         </div>
@@ -126,15 +105,15 @@
         <div class="calc-row">
           <div class="calc-left">
             <div class="calc-title">Social Media Retargeting (Impressionen)</div>
-            <div class="calc-meta">TKP: 25 € · Min: 10.000 · Max: 5.000.000</div>
-            <input id="s_social" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-meta">TKP: 25 €</div>
+            <input id="s_social" type="range" min="50000" max="1000000" step="10000" value="50000" />
             <div class="calc-values">
-              <span>Volumen: <strong id="v_social">10.000</strong></span>
+              <span>Volumen: <strong id="v_social">50.000</strong></span>
               <span>TKP: <strong>25 €</strong></span>
             </div>
           </div>
           <div class="calc-right">
-            <div class="calc-price" id="p_social">250 €</div>
+            <div class="calc-price" id="p_social">1.250 €</div>
             <div class="calc-note">netto</div>
           </div>
         </div>
@@ -143,15 +122,15 @@
         <div class="calc-row">
           <div class="calc-left">
             <div class="calc-title">DV360 Retargeting (Google Netzwerk auf mehr als 5.000 Partnerseiten)</div>
-            <div class="calc-meta">TKP: 25 € · Min: 10.000 · Max: 5.000.000</div>
-            <input id="s_dv360" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-meta">TKP: 25 €</div>
+            <input id="s_dv360" type="range" min="50000" max="1000000" step="10000" value="50000" />
             <div class="calc-values">
-              <span>Volumen: <strong id="v_dv360">10.000</strong></span>
+              <span>Volumen: <strong id="v_dv360">50.000</strong></span>
               <span>TKP: <strong>25 €</strong></span>
             </div>
           </div>
           <div class="calc-right">
-            <div class="calc-price" id="p_dv360">250 €</div>
+            <div class="calc-price" id="p_dv360">1.250 €</div>
             <div class="calc-note">netto</div>
           </div>
         </div>
@@ -160,15 +139,15 @@
         <div class="calc-row">
           <div class="calc-left">
             <div class="calc-title">Standalone Mailings</div>
-            <div class="calc-meta">Preis: 0,40 € pro Mailing · Min: 100 · Max: 500.000</div>
-            <input id="s_mail" type="range" min="100" max="500000" step="100" value="100" />
+            <div class="calc-meta">Preis: 0,40 € pro Mailing</div>
+            <input id="s_mail" type="range" min="500" max="50000" step="100" value="500" />
             <div class="calc-values">
-              <span>Volumen: <strong id="v_mail">100</strong></span>
+              <span>Volumen: <strong id="v_mail">500</strong></span>
               <span>Preis: <strong>0,40 €</strong></span>
             </div>
           </div>
           <div class="calc-right">
-            <div class="calc-price" id="p_mail">40 €</div>
+            <div class="calc-price" id="p_mail">200 €</div>
             <div class="calc-note">netto</div>
           </div>
         </div>
@@ -178,88 +157,73 @@
             <div class="total-label">Gesamtpreis Media</div>
             <div class="total-note">zuzüglich Mehrwertsteuer</div>
           </div>
-          <div class="total-value" id="t_media">760 €</div>
+          <div class="total-value" id="t_media">3.800 €</div>
+        </div>
+
+        <div class="calc-help">
+          Mehr Volumen oder Sonderformate benötigt? <a href="#adrian">Direkt Adrian kontaktieren</a>.
         </div>
       </div>
     </div>
   </section>
 
   <section id="einstieg" class="section">
-  <div class="container">
-    <h2>Einstiegspakete</h2>
-    <p class="sub">
-      Drei klare Startpakete für eure regionale Jugendmarktkampagne. Klickt auf ein Paket – und startet direkt mit uns.
-    </p>
+    <div class="container">
+      <h2>Einstiegspakete</h2>
+      <p class="sub">
+        Drei klare Startpakete für eure regionale Jugendmarktkampagne. Klickt auf ein Paket – und startet direkt mit uns.
+      </p>
 
-    <div class="packages">
-      <!-- 3 Monate -->
-      <a class="package-card" href="#kontakt" aria-label="Einstiegspaket 3 Monate auswählen">
-        <div class="package-top">
-          <div class="package-title">3 Monate</div>
-          <div class="package-price">9.999 €</div>
-        </div>
+      <div class="packages">
+        <a class="package-card" href="#adrian" aria-label="Einstiegspaket 3 Monate auswählen">
+          <div class="package-top">
+            <div class="package-title">3 Monate</div>
+            <div class="package-price">9.999 €</div>
+          </div>
+          <div class="package-list">
+            <div><strong>182k</strong> Display Ads auf StudySmarter</div>
+            <div><strong>80k</strong> Retargeting (Social Media)</div>
+            <div><strong>80k</strong> Retargeting (DV360 – Google)</div>
+            <div><strong>5,0k</strong> Stand-Alone Mailing</div>
+          </div>
+          <div class="package-cta"><span>Auswählen</span><span class="arrow">→</span></div>
+        </a>
 
-        <div class="package-list">
-          <div><strong>182k</strong> Display Ads auf StudySmarter</div>
-          <div><strong>80k</strong> Retargeting (Social Media)</div>
-          <div><strong>80k</strong> Retargeting (DV360 – Google)</div>
-          <div><strong>5,0k</strong> Stand-Alone Mailing</div>
-        </div>
+        <a class="package-card featured" href="#adrian" aria-label="Einstiegspaket 6 Monate auswählen">
+          <div class="package-top">
+            <div class="package-title">6 Monate</div>
+            <div class="package-price">17.999 €</div>
+          </div>
+          <div class="package-list">
+            <div><strong>364k</strong> Display Ads auf StudySmarter</div>
+            <div><strong>160k</strong> Retargeting (Social Media)</div>
+            <div><strong>160k</strong> Retargeting (DV360 – Google)</div>
+            <div><strong>10k</strong> Stand-Alone Mailing</div>
+          </div>
+          <div class="package-cta"><span>Auswählen</span><span class="arrow">→</span></div>
+        </a>
 
-        <div class="package-cta">
-          <span>Auswählen</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+        <a class="package-card dark" href="#adrian" aria-label="Einstiegspaket 12 Monate auswählen">
+          <div class="package-top">
+            <div class="package-title">12 Monate</div>
+            <div class="package-price">29.999 €</div>
+          </div>
+          <div class="package-list">
+            <div><strong>728k</strong> Display Ads auf StudySmarter</div>
+            <div><strong>320k</strong> Retargeting (Social Media)</div>
+            <div><strong>320k</strong> Retargeting (DV360 – Google)</div>
+            <div><strong>20k</strong> Stand-Alone Mailing</div>
+          </div>
+          <div class="package-cta"><span>Auswählen</span><span class="arrow">→</span></div>
+        </a>
+      </div>
 
-      <!-- 6 Monate (Highlight) -->
-      <a class="package-card featured" href="#kontakt" aria-label="Einstiegspaket 6 Monate auswählen">
-        <div class="package-top">
-          <div class="package-title">6 Monate</div>
-          <div class="package-price">17.999 €</div>
-        </div>
-
-        <div class="package-list">
-          <div><strong>364k</strong> Display Ads auf StudySmarter</div>
-          <div><strong>160k</strong> Retargeting (Social Media)</div>
-          <div><strong>160k</strong> Retargeting (DV360 – Google)</div>
-          <div><strong>10k</strong> Stand-Alone Mailing</div>
-        </div>
-
-        <div class="package-cta">
-          <span>Auswählen</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <!-- 12 Monate -->
-      <a class="package-card dark" href="#kontakt" aria-label="Einstiegspaket 12 Monate auswählen">
-        <div class="package-top">
-          <div class="package-title">12 Monate</div>
-          <div class="package-price">29.999 €</div>
-        </div>
-
-        <div class="package-list">
-          <div><strong>728k</strong> Display Ads auf StudySmarter</div>
-          <div><strong>320k</strong> Retargeting (Social Media)</div>
-          <div><strong>320k</strong> Retargeting (DV360 – Google)</div>
-          <div><strong>20k</strong> Stand-Alone Mailing</div>
-        </div>
-
-        <div class="package-cta">
-          <span>Auswählen</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+      <p class="tiny-note">
+        Preise netto, zuzüglich Mehrwertsteuer. Inhalte können je nach Region und Zielsetzung angepasst werden.
+      </p>
     </div>
+  </section>
 
-    <p class="tiny-note">
-      Preise netto, zuzüglich Mehrwertsteuer. Inhalte können je nach Region und Zielsetzung angepasst werden.
-    </p>
-  </div>
-</section>
-
-  
   <section id="lizenzen" class="section">
     <div class="container">
       <h2>Lizenzen</h2>
@@ -271,8 +235,8 @@
         <div class="calc-row">
           <div class="calc-left">
             <div class="calc-title">StudySmarter Premium-Lizenzen (pro Jahr)</div>
-            <div class="calc-meta">Preis: 4 € · Min: 300 · Max: 200.000</div>
-            <input id="s_lic" type="range" min="300" max="200000" step="100" value="300" />
+            <div class="calc-meta">Preis: 4 €</div>
+            <input id="s_lic" type="range" min="300" max="50000" step="100" value="300" />
             <div class="calc-values">
               <span>Anzahl: <strong id="v_lic">300</strong></span>
               <span>Preis: <strong>4 €</strong></span>
@@ -290,6 +254,10 @@
             <div class="total-note">zuzüglich Mehrwertsteuer</div>
           </div>
           <div class="total-value" id="t_lic">1.200 €</div>
+        </div>
+
+        <div class="calc-help">
+          Mehr als 50.000 Lizenzen geplant? <a href="#adrian">Direkt Adrian kontaktieren</a>.
         </div>
       </div>
     </div>
@@ -311,13 +279,33 @@
     </div>
   </section>
 
-  <section id="kontakt" class="contact">
-    <div class="container">
-      <h2>Jetzt starten</h2>
-      <p class="sub">
-        Schreibt uns kurz Region, Ziel und groben Zeitraum – wir melden uns mit einem konkreten Vorschlag.
-      </p>
-      <a class="btn" href="mailto:kontakt@studysmarter.de">Kontakt aufnehmen</a>
+  <section id="adrian" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h2>Kontakt</h2>
+        <p class="sub">
+          Du willst mehr Volumen, ein individuelles Paket oder eine regionale Planung nach PLZ?
+          Schreib mir kurz – ich melde mich schnell zurück.
+        </p>
+
+        <div class="person">
+          <div class="avatar">
+            <img src="adrian.jpg" alt="Adrian Daldorf" />
+          </div>
+          <div>
+            <div class="person-name">Adrian Daldorf</div>
+            <div class="person-mail">
+              <a href="mailto:adrian.daldorf@studysmarter.de">adrian.daldorf@studysmarter.de</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn" href="mailto:adrian.daldorf@studysmarter.de?subject=Anfrage%20Jugendmarktkampagne%20Regionale%20Bank">
+            E-Mail schreiben
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
