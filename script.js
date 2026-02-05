@@ -3,7 +3,11 @@ function formatIntDE(n) {
 }
 
 function formatEUR(n) {
-  return new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(n);
+  return new Intl.NumberFormat("de-DE", {
+    style: "currency",
+    currency: "EUR",
+    maximumFractionDigits: 0
+  }).format(n);
 }
 
 function calcTKP(impressions, tkp) {
@@ -59,10 +63,7 @@ function setup() {
     el("t_lic").textContent = formatEUR(pLic);
   }
 
-  [sDisplay, sSocial, sDv360, sMail].forEach((s) => {
-    s.addEventListener("input", updateMedia);
-  });
-
+  [sDisplay, sSocial, sDv360, sMail].forEach((s) => s.addEventListener("input", updateMedia));
   sLic.addEventListener("input", updateLic);
 
   updateMedia();
