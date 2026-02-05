@@ -473,3 +473,187 @@ input[type="range"]{
 .contact-actions{
   margin-top:16px;
 }
+/* ===== Premium Look Upgrade ===== */
+
+/* Subtle page background */
+body{
+  background:
+    radial-gradient(900px 450px at 20% -10%, rgba(77,163,255,.18), transparent 55%),
+    radial-gradient(700px 360px at 90% 0%, rgba(77,163,255,.10), transparent 55%),
+    #fff;
+}
+
+/* Section titles more premium */
+h2{
+  font-size:30px;
+  line-height:1.15;
+}
+.sub{
+  max-width: 860px;
+}
+
+/* Calc wrapper */
+.calc{
+  border-radius: 22px;
+  padding: 18px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 18px 55px rgba(15,23,42,.10);
+  backdrop-filter: blur(10px);
+}
+
+/* Calc row cards */
+.calc-row{
+  border: 1px solid rgba(15,23,42,.08);
+  border-radius: 18px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 16px;
+}
+
+.calc-title{
+  font-weight: 900;
+  letter-spacing: -.2px;
+}
+
+.calc-meta{
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+/* Values as chips */
+.calc-values{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top: 10px;
+}
+
+.calc-values span{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(77,163,255,.12);
+  border: 1px solid rgba(77,163,255,.18);
+  color: var(--text);
+  font-size: 13px;
+}
+
+.calc-values strong{
+  font-weight: 900;
+}
+
+/* Right side price block */
+.calc-right{
+  border-left: 1px solid rgba(15,23,42,.08);
+  padding-left: 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-end;
+  gap:6px;
+}
+
+.calc-price{
+  font-size: 26px;
+  font-weight: 950;
+  letter-spacing: -.4px;
+}
+
+.calc-note{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Total block */
+.calc-total{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: linear-gradient(180deg, rgba(77,163,255,.10), rgba(77,163,255,.04));
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+}
+
+.total-value{
+  font-size: 28px;
+  font-weight: 950;
+  letter-spacing: -.4px;
+}
+
+/* Help text as small card */
+.calc-help{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: rgba(255,255,255,.8);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ===== Slider styling ===== */
+.range{
+  width:100%;
+  -webkit-appearance:none;
+  appearance:none;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--blue) 0%,
+    var(--blue) var(--fill, 0%),
+    rgba(15,23,42,.10) var(--fill, 0%),
+    rgba(15,23,42,.10) 100%
+  );
+  outline:none;
+  border: 1px solid rgba(15,23,42,.08);
+}
+
+.range::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  appearance:none;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  border: 5px solid var(--blue);
+  box-shadow: 0 10px 25px rgba(15,23,42,.16);
+  cursor: pointer;
+}
+
+.range::-moz-range-thumb{
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  border: 5px solid var(--blue);
+  box-shadow: 0 10px 25px rgba(15,23,42,.16);
+  cursor:pointer;
+}
+
+.range::-moz-range-track{
+  height: 10px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 960px){
+  .calc-row{ grid-template-columns: 1fr; }
+  .calc-right{
+    border-left:none;
+    padding-left:0;
+    align-items:flex-start;
+  }
+}
