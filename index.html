@@ -12,57 +12,61 @@
 <header class="nav">
   <div class="container nav-inner">
     <div class="brand">
-      <img src="studysmarter-logo.svg" alt="StudySmarter" />
+      <a href="#top" class="brand-link">
+        <img src="studysmarter-logo.svg" alt="StudySmarter" />
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-sub">Regionale Bank</span>
+      </a>
     </div>
-    <a class="nav-cta" href="#kontakt">Kontakt</a>
+
+    <nav class="nav-links" aria-label="Seiten-Navigation">
+      <a href="#vorteile">Unsere Vorteile</a>
+      <a href="#media">Media-Kampagne</a>
+      <a href="#benefits">Benefits für Banken</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#kontakt">Kontakt</a>
+      <a class="btn" href="#media">Jetzt starten</a>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="top">
   <section class="hero">
     <div class="container hero-grid">
 
-      <!-- LINKE SEITE -->
       <div>
         <p class="badge">Für regionale Banken</p>
 
         <h1>Nachwuchskunden gewinnen.<br>Jugendmarkt für regionale Banken.</h1>
 
         <p class="sub">
-          Digitale Jugendmarktkampagnen, die die junge Zielgruppe dort erreichen,
-          wo sie täglich Zeit verbringen. Regional steuerbar, messbar und brandsicher.
+          Digitale Jugendmarktkampagnen, die die junge Zielgruppe dort erreichen, wo sie täglich Zeit verbringen.
+          Regional steuerbar, messbar und brandsicher.
         </p>
 
         <div class="proof">
           <div>
-            <span class="kpi">14– >30 Jahre</span>
+            <span class="kpi">14–30</span>
             <span class="lbl">Zielgruppe</span>
           </div>
           <div>
-            <span class="kpi">PLZ Gebiete</span>
-            <span class="lbl">Targeting</span>
+            <span class="kpi">First-Party</span>
+            <span class="lbl">Data & Targeting</span>
           </div>
           <div>
-            <span class="kpi">9 Millionen</span>
-            <span class="lbl">Nutzer in Deutschland</span>
-          </div>
-          <div>
-            <span class="kpi">Finanzbildung & Benefits</span>
-            <span class="lbl">Kampagnen</span>
+            <span class="kpi">Regional</span>
+            <span class="lbl">steuerbar</span>
           </div>
         </div>
       </div>
 
-      <!-- RECHTE SEITE -->
       <div class="card">
         <h3>Unsere Lösungen für euch als Bank</h3>
         <ul class="list">
-          <li>
-            Gezielte Ansprache ohne Streuverlust in eurer Region bei der jungen Zielgruppe
-          </li>
-          <li>
-            Erhöht eure Markenbekanntheit als regionale Bank und sichert euch die Kunden von morgen
-          </li>
+          <li>Gezielte Ansprache ohne Streuverlust in eurer Region bei der jungen Zielgruppe</li>
+          <li>Erhöht eure Markenbekanntheit als regionale Bank und sichert euch die Kunden von morgen</li>
           <li>
             Erhöht die Barriere eurer jungen Bestandskunden durch StudySmarter Premium-Lizenzen
             und reduziert die Abwanderung zu Neobanken
@@ -73,25 +77,182 @@
     </div>
   </section>
 
-  <section id="kontakt" class="contact">
+  <section id="vorteile" class="section">
     <div class="container">
-      <h2>Interesse an einer Jugendmarktkampagne?</h2>
+      <h2>Unsere Vorteile</h2>
+      <div class="grid3">
+        <div class="tile">
+          <h3>Regionale Steuerung</h3>
+          <p>Ausspielung in eurem Geschäftsgebiet, angepasst an eure Region und Zielsetzung.</p>
+        </div>
+        <div class="tile">
+          <h3>Messbar & optimierbar</h3>
+          <p>Transparente KPIs, klare Learnings und laufende Optimierung der Kampagne.</p>
+        </div>
+        <div class="tile">
+          <h3>Brandsicher</h3>
+          <p>Seriöses Umfeld, saubere Aussteuerung und Fokus auf langfristige Markenwirkung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="media" class="section alt">
+    <div class="container">
+      <h2>Preiskalkulator für Media-Kampagnen in eurer Region nach Postleitzahlen</h2>
       <p class="sub">
-        Schreibt uns kurz, welche Region und welches Ziel im Fokus steht –
-        wir melden uns mit einem konkreten Vorschlag.
+        Schiebt die Regler, um Volumen und Budget zu planen. Preise werden live berechnet. Zuzüglich Mehrwertsteuer.
       </p>
 
+      <div class="calc">
+        <!-- Display Ads -->
+        <div class="calc-row">
+          <div class="calc-left">
+            <div class="calc-title">Display-Ads (Impressionen)</div>
+            <div class="calc-meta">TKP: 22 € · Min: 10.000 · Max: 5.000.000</div>
+            <input id="s_display" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-values">
+              <span>Volumen: <strong id="v_display">10.000</strong></span>
+              <span>TKP: <strong>22 €</strong></span>
+            </div>
+          </div>
+          <div class="calc-right">
+            <div class="calc-price" id="p_display">220 €</div>
+            <div class="calc-note">netto</div>
+          </div>
+        </div>
+
+        <!-- Social Retargeting -->
+        <div class="calc-row">
+          <div class="calc-left">
+            <div class="calc-title">Social Media Retargeting (Impressionen)</div>
+            <div class="calc-meta">TKP: 25 € · Min: 10.000 · Max: 5.000.000</div>
+            <input id="s_social" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-values">
+              <span>Volumen: <strong id="v_social">10.000</strong></span>
+              <span>TKP: <strong>25 €</strong></span>
+            </div>
+          </div>
+          <div class="calc-right">
+            <div class="calc-price" id="p_social">250 €</div>
+            <div class="calc-note">netto</div>
+          </div>
+        </div>
+
+        <!-- DV360 -->
+        <div class="calc-row">
+          <div class="calc-left">
+            <div class="calc-title">DV360 Retargeting (Google Netzwerk auf mehr als 5.000 Partnerseiten)</div>
+            <div class="calc-meta">TKP: 25 € · Min: 10.000 · Max: 5.000.000</div>
+            <input id="s_dv360" type="range" min="10000" max="5000000" step="10000" value="10000" />
+            <div class="calc-values">
+              <span>Volumen: <strong id="v_dv360">10.000</strong></span>
+              <span>TKP: <strong>25 €</strong></span>
+            </div>
+          </div>
+          <div class="calc-right">
+            <div class="calc-price" id="p_dv360">250 €</div>
+            <div class="calc-note">netto</div>
+          </div>
+        </div>
+
+        <!-- Standalone Mailings -->
+        <div class="calc-row">
+          <div class="calc-left">
+            <div class="calc-title">Standalone Mailings</div>
+            <div class="calc-meta">Preis: 0,40 € pro Mailing · Min: 100 · Max: 500.000</div>
+            <input id="s_mail" type="range" min="100" max="500000" step="100" value="100" />
+            <div class="calc-values">
+              <span>Volumen: <strong id="v_mail">100</strong></span>
+              <span>Preis: <strong>0,40 €</strong></span>
+            </div>
+          </div>
+          <div class="calc-right">
+            <div class="calc-price" id="p_mail">40 €</div>
+            <div class="calc-note">netto</div>
+          </div>
+        </div>
+
+        <div class="calc-total">
+          <div>
+            <div class="total-label">Gesamtpreis Media</div>
+            <div class="total-note">zuzüglich Mehrwertsteuer</div>
+          </div>
+          <div class="total-value" id="t_media">760 €</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lizenzen" class="section">
+    <div class="container">
+      <h2>Lizenzen</h2>
+      <p class="sub">
+        StudySmarter Premium-Lizenzen: 4 € pro Lizenz pro Jahr. Zuzüglich Mehrwertsteuer.
+      </p>
+
+      <div class="calc">
+        <div class="calc-row">
+          <div class="calc-left">
+            <div class="calc-title">StudySmarter Premium-Lizenzen (pro Jahr)</div>
+            <div class="calc-meta">Preis: 4 € · Min: 300 · Max: 200.000</div>
+            <input id="s_lic" type="range" min="300" max="200000" step="100" value="300" />
+            <div class="calc-values">
+              <span>Anzahl: <strong id="v_lic">300</strong></span>
+              <span>Preis: <strong>4 €</strong></span>
+            </div>
+          </div>
+          <div class="calc-right">
+            <div class="calc-price" id="p_lic">1.200 €</div>
+            <div class="calc-note">netto / Jahr</div>
+          </div>
+        </div>
+
+        <div class="calc-total">
+          <div>
+            <div class="total-label">Gesamtpreis Lizenzen</div>
+            <div class="total-note">zuzüglich Mehrwertsteuer</div>
+          </div>
+          <div class="total-value" id="t_lic">1.200 €</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="section">
+    <div class="container">
+      <h2>Benefits für Banken</h2>
+      <div class="grid2">
+        <div class="tile">
+          <h3>Markenbekanntheit im Geschäftsgebiet</h3>
+          <p>Ihr werdet bei jungen Menschen sichtbar, bevor sie aktiv nach einer Bank suchen.</p>
+        </div>
+        <div class="tile">
+          <h3>Schutz vor Abwanderung</h3>
+          <p>Premium-Lizenzen erhöhen die Bindung und reduzieren Wechselimpulse zu Neobanken.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="container">
+      <h2>Jetzt starten</h2>
+      <p class="sub">
+        Schreibt uns kurz Region, Ziel und groben Zeitraum – wir melden uns mit einem konkreten Vorschlag.
+      </p>
       <a class="btn" href="mailto:kontakt@studysmarter.de">Kontakt aufnehmen</a>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="y"></span> StudySmarter
+    </div>
+  </footer>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    © <span id="y"></span> StudySmarter
-  </div>
-</footer>
-
+<script src="script.js"></script>
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
